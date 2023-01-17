@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import pic from "./deliveryman.webp";
+import { List } from './List';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='head'>
+      <h1>Grocery List</h1>
+      </div>
+      <List/>
+      <div className='head'>
+      <img src={pic} alt="man" width="250px"/>
+      </div>
     </div>
   );
 }
